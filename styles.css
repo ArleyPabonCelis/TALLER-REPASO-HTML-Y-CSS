@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    top: 0;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Alice', serif;
+    background-color: rgb(44, 212, 227);
+}
+
+.barra{
+    background-color: rgb(0, 0, 0);
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn{
+    text-decoration: none;
+    font-size: 4rem;
+    border: 5px rgb(44, 212, 227) solid;
+    color: rgb(44, 212, 227);
+    background-color: rgb(0, 0, 0);
+    border-radius: 2rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.btn:hover{
+    border: 5px black solid;
+    color: black;
+    background-color: rgb(44, 212, 227);
+}
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.balones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5rem;
+    gap: 2rem;
+}
+
+.infoball{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 12px black solid;
+    height: 50rem;
+    width: 50rem;
+    border-radius: 3rem;
+}
+
+.infoball img{
+    width: 30rem;
+}
+
+.infoball h3{
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 14px; 
+    }
+  
+    .barra {
+      flex-direction: column; 
+      text-align: center; 
+    }
+  
+    .btn {
+      font-size: 3rem; 
+      width: auto; 
+      margin: 1rem; 
+    }
+  
+    .balones {
+      flex-direction: column; 
+      margin: 2rem; 
+    }
+  
+    .infoball {
+      height: auto; 
+      width: 80%; 
+      margin: 2rem auto; 
+    }
+    
+    .infoball img {
+      width: 100%;
+    }
+  }
+
+
+  @media screen and (min-width: 1024px) and (max-width: 1280px) and (min-height: 768px) and (max-height: 900px) {
+    body {
+        font-size: 10px;
+    }
+  
+    .balones {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
